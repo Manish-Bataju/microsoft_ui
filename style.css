@@ -13,6 +13,8 @@
     --primary-font: "Roboto";
 }
 body{
+    min-height:100vh;
+    min-height: 100dvh;
     position: relative;
 }
 header{
@@ -185,6 +187,7 @@ input::placeholder{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     gap: 40px;
 
@@ -207,21 +210,28 @@ input::placeholder{
 .products .row1{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     gap: 20px;
-
 }
 .Surface_accessories{
     display: flex;
     flex-direction: column;
     height: 550px;
     width: 325px;
+    min-width: 325px;
     padding: 7px;
     gap: 20px;
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 0 5px 1px #cccccc;
     box-sizing: border-box; 
+}
+@media (max-width: 600px){
+    .Surface-accessories{
+        flex-wrap: wrap;
+        width: 0 auto;
+    }
 }
 
 .surface-accessories{
@@ -311,47 +321,49 @@ input::placeholder{
     object-fit: cover;
 }
   
-
 .business_products{
     background-color: #DCEEF8;
     width: 100%;
-    padding: 30px 0;
 }
+/* .bg-color{
+    height: 100vh;
+    padding: 30px 0;
+    position: absolute;
+    z-index: -1;
+} */
 
 .business_product{
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    gap: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   width: 75%;
+   padding: 100px 0px;
+   margin: 0 auto;
+   gap: 20px;
 }
 
-.title_business{
-    width: 100%;
-    text-align: left;
-    padding-left: 7px;
-}
 .business_accessories_products{
-    margin-top: 20px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
 }
 .Surface_accessories_b{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: 550px;
     width: 325px;
-    padding: 7px;
     gap: 20px;
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 0 5px 1px #cccccc;
     box-sizing: border-box; 
+}
+.Surface_accessories_b img{
+    border-radius: 20px;
+    padding: 10px;
 }
 .content_products_b{
     font-family: "roboto";
@@ -367,4 +379,19 @@ input::placeholder{
 .content_products_b p{
     font-family: "roboto";
     font-size: 15px;
+}
+.ai_copilot{
+    
+}
+.copilot_news{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 550px;
+    width: 325px;
+    gap: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 1px #cccccc;
+    box-sizing: border-box; 
 }
