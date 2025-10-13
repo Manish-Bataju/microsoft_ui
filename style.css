@@ -84,8 +84,6 @@ li{
 
 }
 
-width: 100%;
-@media{}
 .slider{
     height: 60vh;
     width: 100%;
@@ -380,9 +378,7 @@ input::placeholder{
     font-family: "roboto";
     font-size: 15px;
 }
-.ai_copilot{
-    
-}
+
 .copilot_news{
     display: flex;
     flex-direction: column;
